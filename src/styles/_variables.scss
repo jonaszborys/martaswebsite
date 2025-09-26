@@ -1,0 +1,16 @@
+@use 'sass:color';
+
+$font-primary: 'Nunito', sans-serif;
+
+$desktop-breakpoint: 768px;
+$max-width: 1230px;
+
+$color-primary: #363434;
+$color-primary-light: color.adjust($color-primary, $lightness: 30%);
+$color-secondary: #ffffff;
+$color-nav-text: #463939;
+$color-nav-text-light : color.adjust($color-nav-text, $lightness: 30%);
+$color-text: #000;
+$color-bg: #FBF8F5;
+$color-red: #d22;
+$color-footer-hover: #555;

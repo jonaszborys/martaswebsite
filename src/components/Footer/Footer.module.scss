@@ -1,0 +1,112 @@
+@use 'sass:color';
+@use '../../styles/variables' as vars;
+
+.footer {
+  background: vars.$color-primary;
+  color: vars.$color-secondary;
+  padding: 40px 20px;
+
+  .content {
+    max-width: vars.$max-width;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .logo {
+    max-width: 160px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: vars.$color-secondary;
+      font-weight: bold;
+      letter-spacing: 0.03em;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: color.adjust(vars.$color-secondary, $lightness: -15%);
+      }
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.5;
+      font-size: 15px;
+    }
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 1.3rem;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: vars.$color-footer-hover;
+      color: vars.$color-secondary;
+      transition:
+        background 0.3s ease,
+        transform 0.2s ease;
+
+      &:hover {
+        background: color.adjust(vars.$color-footer-hover, $lightness: 15%);
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  @media (min-width: vars.$desktop-breakpoint) {
+    padding: 65px 20px;
+
+    .content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      text-align: left;
+      gap: 40px;
+    }
+
+    .logo {
+      max-width: 150px;
+      margin-right: 50px;
+    }
+
+    .column {
+      align-items: flex-start;
+
+      a,
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .socials {
+      justify-content: flex-start;
+    }
+  }
+}

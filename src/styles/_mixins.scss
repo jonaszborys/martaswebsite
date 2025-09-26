@@ -1,0 +1,37 @@
+@use 'sass:map';
+@use './variables' as *;
+
+@mixin heading($level, $weight: 700, $size-desktop: null) {
+  font-family: 'Nunito', sans-serif;
+  font-weight: $weight;
+  
+  @if $level == 'h1' {
+    font-size: 44px;
+    @if $size-desktop { @media (min-width: $desktop-breakpoint) { font-size: $size-desktop; } }
+  }
+  @else if $level == 'h2' {
+    font-size: 28px;
+    @if $size-desktop { @media (min-width: $desktop-breakpoint) { font-size: $size-desktop; } }
+  }
+  @else if $level == 'h3' {
+    font-size: 20px;
+    @if $size-desktop { @media (min-width: $desktop-breakpoint) { font-size: $size-desktop; } }
+  }
+}
+
+// $v-mobile, $h-mobile – vertical and horizontal padding on mobile
+// $v-desktop, $h-desktop – vertical and horizontal padding on desktop
+@mixin section-padding(
+  $v-mobile: 30px,
+  $h-mobile: 30px,
+  $v-desktop: null,
+  $h-desktop: null
+) {
+  padding: $v-mobile $h-mobile;
+
+  @media (min-width: $desktop-breakpoint) {
+    padding: 
+      if($v-desktop != null, $v-desktop, $v-mobile)
+      if($h-desktop != null, $h-desktop, $h-mobile);
+  }
+}

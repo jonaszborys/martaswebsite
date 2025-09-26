@@ -1,0 +1,85 @@
+@use 'sass:color';
+@use '../../styles/variables' as vars;
+
+@keyframes dropdownIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dropdownOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+}
+
+.dropdown {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.dropdownButton {
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.1s ease-in;
+  width: 100%;
+  border: none;
+  background: transparent;
+  background-color: vars.$color-secondary;
+}
+
+.dropdownIcon {
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  width: 1.125rem;
+  transition: transform 0.3s ease;
+}
+
+.expanded {
+  transform: rotate(180deg);
+}
+
+.dropdownList {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-radius: 0 0 4px 4px;
+  animation: dropdownIn 0.25s ease forwards;
+  background-color: vars.$color-secondary;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.dropdownItem {
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+
+  &:last-child {
+    border-radius: 0 0 4px 4px;
+  }
+
+  &:hover {
+    background-color: color.adjust(vars.$color-secondary, $lightness: -10%);
+  }
+}

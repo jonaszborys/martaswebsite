@@ -1,0 +1,15 @@
+@use '../../styles/variables' as vars;
+
+.contactButton {
+  background: vars.$color-primary;
+  color: vars.$color-secondary;
+  border-radius: 4px;
+  width: 170px;
+  height: 50px;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}

@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "home": "Strona Główna",
+    "offering": "Oferta",
+    "about": "O Nas",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "hero": {
+      "title": "We listen and act",
+      "text": "At Ministry of HR, we believe that every successful business begins with empowered and engaged people. Our HR consulting services are designed to help organizations navigate the complexities of human resources with confidence. Whether you need guidance on HR processes, or strategic HR planning, we provide tailored solutions that align with your unique goals."
+    },
+    "offering": {
+      "title": "OUR OFFERING",
+      "subtitle": "From us, you can enjoy the following:",
+      "1": {
+        "title": "Interim HR Manager / HR Director Support",
+        "description": "stepping in as an experienced leader to guide organizations through periods of change, transformation, or restructuring"
+      },
+      "2": {
+        "title": "Building HR Departments in Poland",
+        "description": "helping international companies establish and grow their HR presence locally or supporting companies operating in Poland that do not yet have a dedicated HR function, guiding them through the complete process of establishing a professional HR department"
+      },
+      "3": {
+        "title": "HR Business Partnering",
+        "description": "aligning HR initiatives with business priorities for measurable impact"
+      },
+      "4": {
+        "title": "Expert Evaluation of HR Systems & Processes",
+        "description": "independent assessment of HR systems, tools, and processes before implementation, as well as improving those already in place to ensure they meet business needs and best practices"
+      },
+      "5": {
+        "title": "Competency Matrices & Development Frameworks",
+        "description": "building clear structures to assess and grow employee skills"
+      },
+      "6": {
+        "title": "Temporary HR Support & Project Management",
+        "description": "hands-on assistance in driving specific HR projects or bridging resource gaps"
+      }
+    },
+    "reference": {
+      "text": {
+        "line1": "I had the pleasure of consulting with Marta on how to improve our employee evaluation automation app. The session was extremely valuable – Marta shared plenty of inspiring ideas that helped us better understand how to shape our product positioning and build a solid feature backlog.",
+        "line2": "She is a true expert in her field – knowledgeable, insightful, and with a fresh perspective. Working with her was a great experience!"
+      },
+      "name": {
+        "line1": "Daria Dąbrowska – Volk",
+        "line2": "Head of Product, Aithor"
+      }
+    },
+    "seo": {
+      "title": "Strona Główna - MySite",
+      "description": "Witamy w MySite. Sprawdź naszą ofertę, poznaj nas i skontaktuj się."
+    }
+  },
+  "offering": {
+    "text": "Świadczymy usługi najwyższej jakości dopasowane do Twoich potrzeb.",
+    "seo": {
+      "title": "Oferta - MySite",
+      "description": "Poznaj usługi oferowane przez MySite, stworzone aby dawać Ci wartość."
+    }
+  },
+  "about": {
+    "title": "O Nas",
+    "article": {
+      "line1": "I’ve spent the last 10+ years helping companies grow by putting people at the center of their business. Over the years, I’ve built HR departments from the ground up, supported teams across Poland and abroad, and guided organizations through big changes like acquisitions and international expansion.",
+      "line2": "What I’ve learned is simple: successful businesses start with engaged and empowered people. I started my own HR consulting practice to share my experience and help companies create workplaces where both people and business can thrive. I truly believe in what I do, and in the value it can bring to the business. Whether you're just setting up your HR consulting practice to share my experience and help companies create workplaces where both people and business can thrive. I truly believe in what I do, and in the value it can bring to the business. Whether you're just setting up your HR function or looking to take your people strategy to the next level, I'm here to support you with practical solutions, a people-first mindset, and hands-on experience. To ensure that HR function is a true partner to your business."
+    },
+    "seo": {
+      "title": "O Nas - MySite",
+      "description": "Dowiedz się więcej o MySite i ludziach, którzy za nim stoją."
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "text": "Skontaktuj się z nami przez e-mail lub telefon.",
+    "button": "Kontakt",
+    "seo": {
+      "title": "Kontakt - MySite",
+      "description": "Skontaktuj się z MySite w sprawie pytań, wsparcia lub współpracy."
+    }
+  }
+}

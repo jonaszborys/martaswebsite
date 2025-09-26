@@ -1,0 +1,16 @@
+@use '../../styles/variables' as vars;
+
+.pageWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.pageContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  max-width: vars.$max-width;
+}
